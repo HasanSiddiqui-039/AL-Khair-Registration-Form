@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4f5;
+    color: #19303b;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    color: #263f4b;
+}
+
+img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+form {
+    max-width: 520px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+small {
+    display: block;
+    color: red;
+    margin-top: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #238779;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17685e;
+}
+
+form button {
+    width: 100%;
+}
+
+#openDashboard {
+    display: block;
+    margin: 20px auto;
+    background-color: #263f4b;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+}
+
+#dashboardSection {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: #eaf7f5;
+    border: 1px solid #cce9e4;
+    border-radius: 8px;
+}
+
+.stat-card span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+    color: #168567;
+}
+
+.table-box {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #263f4b;
+    color: white;
+}
+
+.delete {
+    background-color: #d84b4b;
+}
+
+.dashboard-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#dashboardSection[hidden], #regForm[hidden], #openDashboard[hidden] {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .stats, .dashboard-buttons {
+        flex-direction: column;
+    }
+}
