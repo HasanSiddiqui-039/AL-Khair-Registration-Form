@@ -1,1 +1,0 @@
-# AL-Khair-Registration-Form
